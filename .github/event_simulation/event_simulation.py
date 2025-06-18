@@ -51,7 +51,9 @@ class EventSimulator:
 
         print("📦 Active Events:")
         for event in self.events:
-            print(f" - {event}")
+            print(" - ", end="")
+            event.display()
+
 
 # ---------- Example Usage ----------
 
