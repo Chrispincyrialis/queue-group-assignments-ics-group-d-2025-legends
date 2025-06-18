@@ -49,7 +49,7 @@ class EventSimulator:
                 if self.events[j].priority < self.events[j + 1].priority:
                     self.events[j], self.events[j + 1] = self.events[j + 1], self.events[j]
 
-        print("📦 Active Events:")
+        print(" Active Events:")
         for event in self.events:
             print(" - ", end="")
             event.display()
