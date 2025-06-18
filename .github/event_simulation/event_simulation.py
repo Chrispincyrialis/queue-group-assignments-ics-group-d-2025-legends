@@ -1,3 +1,5 @@
+import time
+
 class Event:
     def __init__(self, name, expiry_time, priority):
         self.name = name
