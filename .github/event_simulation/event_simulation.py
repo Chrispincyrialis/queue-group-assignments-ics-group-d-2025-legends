@@ -14,7 +14,7 @@ class Event:
         return self.waiting_time % 3 == 0  # Age every 3 ticks
 
     def apply_aging(self):
-        self.priority += 1
+        self.priority += 1  # Increase priority as it waits
 
     def is_expired(self):
         return self.waiting_time >= self.expiry_time
