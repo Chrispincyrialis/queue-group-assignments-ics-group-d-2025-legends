@@ -42,7 +42,7 @@ class EventSimulator:
                 self.events.remove(event)
             elif event.should_age():
                 event.apply_aging()
-                print(f"⚠️ AGED: {event.name} (Priority: {event.priority})")
+                print(f" AGED: {event.name} (Priority: {event.priority})")
 
         for i in range(len(self.events)):
             for j in range(0, len(self.events) - i - 1):
