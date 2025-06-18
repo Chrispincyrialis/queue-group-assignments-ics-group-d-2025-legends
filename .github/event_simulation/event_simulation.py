@@ -38,7 +38,7 @@ class EventSimulator:
             event.tick()
 
             if event.is_expired():
-                print(f"❌ EXPIRED: {event.name}")
+                print(f" EXPIRED: {event.name}")
                 self.events.remove(event)
             elif event.should_age():
                 event.apply_aging()
