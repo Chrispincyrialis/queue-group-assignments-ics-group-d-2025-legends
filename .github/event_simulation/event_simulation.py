@@ -11,7 +11,7 @@ class Event:
         self.waiting_time += 1
 
     def should_age(self):
-        return self.waiting_time > 0 and self.waiting_time % 5 == 0
+        return self.waiting_time % 3 == 0  # Age every 3 ticks
 
     def apply_aging(self):
         self.priority += 1
