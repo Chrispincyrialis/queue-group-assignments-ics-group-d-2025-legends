@@ -19,8 +19,8 @@ class Event:
     def is_expired(self):
         return self.waiting_time >= self.expiry_time
 
-    def __repr__(self):
-        return f"{self.name} (Wait: {self.waiting_time}, Expire: {self.expiry_time}, Priority: {self.priority})"
+    def display(self):
+        print(f"{self.name} (Wait: {self.waiting_time}, Expire: {self.expiry_time}, Priority: {self.priority})")
 
 class EventSimulator:
     def __init__(self):
