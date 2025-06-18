@@ -1,7 +1,7 @@
 import time
 
 class Event:
-    def __init__(self, name, expiry_time, priority):
+    def __init__(self, name, expiry_time, priority=0):
         self.name = name
         self.waiting_time = 0
         self.expiry_time = expiry_time
